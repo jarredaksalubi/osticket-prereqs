@@ -62,10 +62,39 @@ Download and install PHP Manager for ISS, Rewrite Module, PHP 7.3.8, VC_redist.x
 
 <p>
 <img src="https://i.imgur.com/swBAs2u.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
+Open IIS as an Admin and register PHP from within IIS
+<p>
+
 <img src="https://i.imgur.com/HwYhJGJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-Open IIS as an Admin and register PHP from within IIS.
+
 Install osTicket v1.15.8 from the installation files.
 Extract and copy the “upload” folder to c:\inetpub\wwwroot. Rename the “upload” folder to “osTicket”.
 </p>
 <br />
+
+<img src="https://i.imgur.com/EhgNygn.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+Enable required PHP extensions in IIS Manager ->Rename ost-config.php from C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php to C:\inetpub\wwwroot\osTicket\include\ost-config.php. -> Assign permissions to ost-config.php. Continue setting up osTicket in the browser by naming the helpdesk and setting the default email that receives email from customers.
+
+<img src="https://i.imgur.com/S56HNyo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+Download and install HeidiSQL from the installation files.
+Open HeidiSQL and create a new session with root/Password1. Connect to the session and create a database called “osTicket”.
+
+<img src="https://i.imgur.com/g1KiKvH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+Continue setting up osTicket in the browser and enter "osTicket" for MySQL Database, "root" for MySQL Username, and "Password1" for MySQL Password. -> Click “Install Now!” and browse to your help desk login page at http://localhost/osTicket/scp/login.php.
+
+
+That's it! Once you've completed these steps, you should be able to access your osTicket installation at http://localhost/osTicket/.
+
+
+
+
+
+
+
+
+
+
