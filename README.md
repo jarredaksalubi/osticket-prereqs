@@ -61,9 +61,11 @@ Download and install PHP Manager for ISS, Rewrite Module, PHP 7.3.8, VC_redist.x
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/swBAs2u.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Open ISS as a admin, Register PHP from within ISS, Reload ISS (Open IIS, Stop and Start the server)
+<img src="https://i.imgur.com/HwYhJGJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Open IIS as an Admin and register PHP from within IIS.
+Install osTicket v1.15.8 from the installation files.
+Extract and copy the “upload” folder to c:\inetpub\wwwroot. Rename the “upload” folder to “osTicket”.
 </p>
 <br />
